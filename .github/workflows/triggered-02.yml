@@ -1,6 +1,8 @@
 # 2023-02-12
 
-name: "trigger-01"
+# https://docs.github.com/rest/reference/actions#create-a-workflow-dispatch-event'
+
+name: "triggered-02"
 
 # on:
 #   push:
