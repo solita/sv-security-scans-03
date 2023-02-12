@@ -1,0 +1,17 @@
+# 2023-02-12
+
+name: "trigger-01"
+
+# on:
+#   push:
+#     branches: [ "main" ]
+on: workflow_dispatch
+
+jobs:
+  Triggered:
+    name: Triggered Workflow
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          set -ux
+          echo "I have been successfully triggered!"
