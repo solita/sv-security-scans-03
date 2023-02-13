@@ -14,6 +14,7 @@ jobs:
     name: Triggered Workflow
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Report Successful triggering
+        run: |
           set -ux
-          echo "I have been successfully triggered!"
+          echo "I have been successfully triggered at $(date)!"
