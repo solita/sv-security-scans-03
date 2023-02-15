@@ -18,3 +18,15 @@ jobs:
         run: |
           set -ux
           echo "I have been successfully triggered at $(date)!"
+
+      - name: Conditional Bash 1
+        run: |
+          set -ux
+          echo "Bash 1"
+        if: ${{ '0' == '0' }}
+
+      - name: Conditional Bash 2
+        run: |
+          set -ux
+          echo "Bash 2"
+        if: ${{ '1' == '0' }}
